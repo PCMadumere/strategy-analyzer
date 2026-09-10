@@ -1,12 +1,20 @@
 {
-  "name": "trading-analytic-platform",
+  "name": "trading-strategy-platform",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Trading strategy research, backtesting, comparison and recommendation platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "npm run dev --workspaces --if-present"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": ">=20"
+  }
 }
