@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/shared" },
+    { "path": "./packages/strategy-engine" },
+    { "path": "./packages/indicator-engine" },
+    { "path": "./packages/data-engine" },
+    { "path": "./packages/backtest-engine" },
+    { "path": "./packages/analytics-engine" },
+    { "path": "./packages/risk-engine" },
+    { "path": "./packages/recommendation-engine" },
+    { "path": "./packages/database" },
+    { "path": "./packages/bybit-client" },
+    { "path": "./apps/api" }
+  ]
+}
